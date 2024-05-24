@@ -1,0 +1,497 @@
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(5, 5, 1);
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* ESTILO DO CABEÇALHO */
+.logo img {
+    height: 150px;
+    width: 180px;
+}
+
+header {
+    padding: 20px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.txt {
+    color: bisque;
+    font-family: monospace;
+    letter-spacing: 3px;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.txt-topo span {
+    color: orange;
+}
+
+.topo .txt-topo {
+    padding: 20px 5%;
+}
+
+.img-topo img {
+    height: 300px;
+    width: 470px;
+    border-radius: 1000px;
+    margin-right: 60px;
+}
+
+section.topo .flex {
+    align-items: center;
+    justify-content: center;
+}
+
+.p-mudo {
+    color: white;
+    margin: 40px 0;
+}
+
+.topo .img-topo img {
+    position: relative;
+    animation: aprendizado 2s ease-in-out infinite alternate;
+}
+
+@keyframes aprendizado {
+    0% {
+        bottom: 0;
+    }
+
+    100% {
+        bottom: 30px;
+    }
+}
+
+.especiarias h1 {
+    color: orangered;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 90px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.especiarias .h3 {
+    color: orangered;
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.menu-do-dia img {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    margin-left: 90px;
+    margin-top: 50px;
+    cursor: pointer;
+    animation: teste 2s infinite alternate;
+}
+
+.menu-do-dia img:hover {
+    transform: scale(1.10);
+    transition: .2s;
+    box-shadow: 5px 5px 20px orange;
+}
+
+.nome-do-item {
+    color: rgb(156, 154, 154);
+    margin-top: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+
+}
+
+.padding {
+    padding: 10px 8.5%;
+    display: flex;
+}
+
+.nome-do-potente {
+    color: rgb(156, 154, 154);
+    margin-top: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    margin-left: 127px;
+}
+
+.preço {
+    color: beige;
+    margin-left: 143px;
+    font-size: 25px;
+    margin-bottom: 130px;
+}
+
+.numeros span {
+    color: rgba(255, 166, 0, 0.623);
+}
+
+.numeros {
+    display: flex;
+}
+
+.preço2 {
+    color: beige;
+    margin-left: 190px;
+    font-size: 25px;
+    margin-bottom: 130px;
+}
+
+.outros .aviso {
+    text-align: center;
+    color: orange;
+    font-family: monospace;
+}
+
+.classe {
+    color: rgb(170, 170, 170);
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    margin-left: 90px;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.eletronicos img {
+    height: 200px;
+    width: 200px;
+    margin-right: 60px;
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.eletronicos {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.botão-mais {
+    margin-bottom: 30px;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgb(172, 172, 172);
+    cursor: pointer;
+}
+
+.centralizador {
+    display: flex;
+    justify-content: center;
+}
+
+.botão-mais:hover {
+    background-color: orange;
+    transform: scale(1.1);
+}
+
+.eletronicos img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: 10px 10px 18px rgba(170, 2, 170, 0.384);
+}
+
+.nome-do-item-elec {
+    color: rgb(156, 154, 154);
+    margin-top: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 13px;
+    margin-left: 110px;
+    text-align: center;
+
+}
+
+.nome-do-potente-elec {
+    color: rgb(156, 154, 154);
+    margin-top: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    margin-left: 40px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.nomes-eletronicos {
+    display: flex;
+}
+
+.preço-elec {
+    color: beige;
+    margin-left: 275px;
+    font-size: 25px;
+}
+
+.numeros-eletronicos {
+    display: flex;
+}
+.menu-do-dia {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.preço2-elec {
+    color: beige;
+    margin-left: 160px;
+    font-size: 25px;
+}
+
+.numeros-elec {
+    display: flex;
+}
+
+.nome-do-item-music {
+    color: rgb(156, 154, 154);
+    margin-top: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 13px;
+    margin-left: 110px;
+    text-align: center;
+
+}
+
+.nome-do-potente-music {
+    color: rgb(156, 154, 154);
+    margin-top: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    margin-left: 50px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.preço-music {
+    color: beige;
+    margin-left: 275px;
+    font-size: 25px;
+}
+
+.preço2-music {
+    color: beige;
+    margin-left: 115px;
+    font-size: 25px;
+}
+
+.outros span {
+    color: rgba(255, 166, 0, 0.623);
+}
+
+.nome-do-item-house {
+    color: rgb(156, 154, 154);
+    margin-top: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 13px;
+    margin-left: 130px;
+    text-align: center;
+
+}
+
+.nome-do-potente-house {
+    color: rgb(156, 154, 154);
+    margin-top: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    margin-left: 62px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.preço-house {
+    color: beige;
+    margin-left: 235px;
+    font-size: 25px;
+}
+
+.preço2-house {
+    color: beige;
+    margin-left: 80px;
+    font-size: 25px;
+}
+
+.nome-do-item-flower {
+    color: rgb(156, 154, 154);
+    margin-top: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 13px;
+    margin-left: 143px;
+    text-align: center;
+
+}
+
+.nome-do-potente-butterfly {
+    color: rgb(156, 154, 154);
+    margin-top: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    margin-left: 34px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.nome-do-potente-flower {
+    color: rgb(156, 154, 154);
+    margin-top: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    margin-left: 69px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.preço-flower {
+    color: beige;
+    margin-left: 235px;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.preço2-flower {
+    color: beige;
+    margin-left: 80px;
+    font-size: 25px;
+}
+
+.preço2-butterfly {
+    color: beige;
+    margin-left: 125px;
+    font-size: 25px;
+}
+
+footer img {
+    height: 120px;
+    width: 150px;
+    margin-left: 90px;
+}
+
+footer {
+    background-color: black;
+    border-top: solid 1px white;
+}
+
+.linha-final {
+    text-align: center;
+    color: white;
+    font-size: 10px;
+}
+
+#searchInput {
+    padding: 8px;
+    border: 0, 5px white;
+    background-color: transparent;
+    color: orange;
+    width: 300px;
+}
+.nome-do-item-oculto {
+    color: rgb(156, 154, 154);
+    margin-top: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    display: none;
+}
+.nome-do-potente-oculto {
+    color: rgb(156, 154, 154);
+    margin-top: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    margin-left: 127px;
+    display: none;
+}
+div.item {
+    display: inline;
+}
+
+
+@media screen and (max-width: 411px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .img-topo img {
+        height: 180px;
+        width: 300px;
+        margin-left: 55px;
+    }
+
+    .menu-do-dia img {
+        height: 300px;
+        width: 300px;
+        border-radius: 10px;
+        margin-left: 30px;
+        margin-top: 50px;
+        cursor: pointer;
+        animation: teste 2s infinite alternate;
+    }
+    .nome-do-item-oculto {
+        display: inline;
+    }
+    .nome-do-potente-oculto {
+        display: inline;
+    }
+    .nome-do-item {
+        display: none;
+    }
+    .nome-do-potente {
+        display: none;
+    }
+    div.item {
+        display: block;
+    }
+}
+@media screen and (max-width: 400px) and (min-width: 0px) and (max-height: 860px) and (min-height: 0px){
+
+    .img-topo img {
+        height: 180px;
+        width: 300px;
+        margin-left: 55px;
+    }
+
+    .menu-do-dia img {
+        margin-top: 50px;
+    }
+    .nome-do-item-oculto {
+        display: inline;
+    }
+    .nome-do-potente-oculto {
+        display: inline;
+    }
+    .nome-do-item {
+        display: none;
+    }
+    .nome-do-potente {
+        display: none;
+    }
+    div.item {
+        display: block;
+    }   
+    .menu-do-dia  {
+        text-align: center;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+}
